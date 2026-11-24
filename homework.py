@@ -72,7 +72,9 @@ else:
     mentions_python = False
 
 print(
-    f"is_all_caps = {is_all_caps} \nhas_exclamation = {has_exclamation} \nmentions_python = {mentions_python}\n"
+    f"is_all_caps = {is_all_caps} "
+    f"\nhas_exclamation = {has_exclamation}"
+    f"\nmentions_python = {mentions_python}\n"
 )
 
 """
@@ -88,9 +90,9 @@ password = "Password123"
 # Write your code below:
 
 if len(password) < 8:
-    print("Rule 1: Your password must be at least 8 characters long!")
+    print("Your password must be at least 8 characters long!")
 elif password.lower() == "password123":
-    print("Rule 2: Your password is too common!")
+    print("Your password is too common!")
 else:
     print("Password accepted")
 
@@ -158,9 +160,9 @@ unit = unit.lower().strip()
 
 if unit == "c":
     result = round((temp_value * 9 / 5) + 32, 1)
-    print(str(temp_value) + " Celsius is " + str(result) + " Fahrenheit.")
+    print(f"{temp_value} Celsius is {result} Fahrenheit.")
 elif unit == "f":
     result = round((temp_value - 32) * 5 / 9, 1)
-    print(str(temp_value) + " Fahrenheit is " + str(result) + " Celsius")
+    print(f"{temp_value} Fahrenheit is {result} Celsius.")
 else:
     print("Invalid unit entered")
